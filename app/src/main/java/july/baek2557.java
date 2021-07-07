@@ -1,6 +1,6 @@
 package july;
 
-/*2021.07.06
+/* 2021.07.06
  * Hello world! 출력하기 
  */
 public class baek2557 {
