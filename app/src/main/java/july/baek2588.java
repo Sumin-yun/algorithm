@@ -14,9 +14,13 @@ public class baek2588 {
     int a = scan.nextInt();
     int b = scan.nextInt();
 
-    int step1= a*(b*0.001);
-
-
+    int st1= a*(b%10);
+    int st2= a*((b%100)-(b%10));
+    int st3= a*(b-(b%100));
+    System.out.println(st1);
+    System.out.println(st2/10);
+    System.out.println(st3/100);
+    System.out.println(st1+st2+st3);
 
   }  
 }
