@@ -24,11 +24,11 @@ public class baek3052 {
 
     for(int i=0; i<10; i++) {
       b1=false;
-      for(int j=i+1; j<10; j++) 
+      for(int j=i+1; j<10; j++)
         if ((num[i]) == (num[j])) {        
-          b1 = true;    
+          b1 = true;
           break;
-        } 
+        }  
       if(b1==false) {
         count++;
       }
