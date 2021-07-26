@@ -1,4 +1,5 @@
 package july;
+import java.util.Scanner;
 
 public class baek8958 {
   /*
@@ -7,5 +8,27 @@ public class baek8958 {
    *  "OOXXOXXOOO"의 점수는 1+2+0+0+1+0+0+1+2+3 = 10점이다.
    *  OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작성하시오.
    */
+
+  public static void main(String[] args) {
+
+    Scanner scan = new Scanner(System.in);
+    String[] arr = new String[100];
+
+
+    int quizNum = scan.nextInt();
+
+    for(int i = 0; i< quizNum; i++) {
+
+      String quiz = scan.next(); 
+      String array[] = quiz.split(" ");
+      arr[i] = array[i];
+
+      if(arr.length >= 80) {
+        return;
+      }
+    }
+
+
+  }
 
 }
