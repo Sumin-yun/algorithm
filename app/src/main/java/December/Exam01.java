@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class Exam01 {
   public static void main(String[] args){
 
-    int month;
-    int x;
-
     Scanner scan = new Scanner(System.in);
+
     int input = scan.nextInt();
-
-    while(input>=1 && input<=12) {
-      month=(input/4)+1;
-    }
-
-    scan.close();
+    System.out.println(Cal(input));
 
   }
+
+
+  public static int Cal(int x) {
+    while(x>=1 && x<=12) {
+      int month=(x/4)+1;
+      return month;
+    }
+    return x;
+  }
 }
-
-
