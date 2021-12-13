@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class Exam02 {
   public static void main(String[] args){
 
+    int count=0;
+
     Scanner scan = new Scanner(System.in);
 
     ArrayList<Integer> list =  new ArrayList<>();
@@ -14,6 +16,7 @@ public class Exam02 {
     while(true) {  
 
       int x = scan.nextInt();
+      ++count;
       list.add(x);
 
       if(x <= -1) {
@@ -21,21 +24,22 @@ public class Exam02 {
           System.out.print(i);
         }
         System.out.println("====");
-        System.out.println(Cal(list));
+        System.out.println(Cal(list,count));
         break;
       }
     }
-  }
+  } 
 
-  private static int Cal(ArrayList<Integer> list) {
-    int temp[]=null;
+  private static int Cal(ArrayList<Integer> list,int count) {
+    int[] num = new int[count];
     int min = 0;
+
     for(int k:list) {
-      for(int i=0; i<list.size(); i++) {
+      for(int i=0; i<count; i++) {
         if(i!=k) { 
-          temp[i]=i;
-          if(temp[i+1]>temp[i]) {
-            min=temp[i];
+          num[i]=i;
+          if(num[i-1]>num[i] || num[0]>num[i]) {
+            min=num[i];
           }
         }
       }
