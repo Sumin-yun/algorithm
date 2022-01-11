@@ -1,4 +1,4 @@
-package july;
+package baeckJoon;
 import java.util.Scanner;
 
 public class baek2562 {

@@ -1,4 +1,4 @@
-package july;
+package baeckJoon;
 import java.util.Scanner;
 
 /* 2021.07.07.화

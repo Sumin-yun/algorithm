@@ -1,4 +1,4 @@
-package july;
+package baeckJoon;
 
 /* 2021.07.06
  * Hello world! 출력하기 
